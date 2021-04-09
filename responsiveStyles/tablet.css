@@ -108,7 +108,7 @@
     position: absolute;
     right:115px;
     top:80px;
-    height: 90vh;
+    height: 80vh;
     display:flex;
     flex-direction:column;
     align-items: center;
@@ -411,7 +411,7 @@
 
 .gallery-content h4 {
     color: #555657;
-    font-size: 1.5rem;
+    font-size: 2em;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -437,24 +437,25 @@
    width:100%;
 }
 /* styles for footer and contact form */
-.footer {
+.footer-container {
     background: #304353;
-    padding: 3rem;
-    margin:20px 0 0;
+    padding: 2em 0 0;
+    width:100%;
 }
 
 .footer-content {
     text-align: center;
 }
 
-.footer-content h4 {
+
+.footer-heading{
     color: #bcc3c7;
-    font-size: 1.5rem;
+    font-size: 2em;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-.footer-content p {
+.footer-text{
     color: #88949B;
     font-size: 1rem;
     letter-spacing: 2px;
@@ -463,12 +464,23 @@
 
 .footer-input-container {
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
-    padding-top: 3rem;
+    margin-top: 20px;
     width:100%;
 }
+.footer-input-container form{
+    width:80%;
+    display: flex;
+    flex-direction: column;
 
+}
+
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    margin:20px 0;
+}
 .contact-input{
     width:45%;
     height:45px;

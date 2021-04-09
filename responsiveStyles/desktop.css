@@ -11,7 +11,7 @@
     padding: 1rem 6rem;
     width: 100vw;
     background: var(--background);
-    margin-top: 10px;
+    margin-top: 1px;
     transition: var(--mainTransition);
     -webkit-transition: var(--mainTransition);
     -moz-transition: var(--mainTransition);
