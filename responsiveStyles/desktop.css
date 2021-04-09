@@ -69,16 +69,16 @@ ul li a:hover {
 /* end of styles for nav bar */
 /* ========================== */
 /* styles for hero section */
-div.hero-section {
+.hero-section {
     background: #304353;
-    padding: 10rem;
+    padding: 5rem;
 }
 
-div.hero-content-heading {
+.hero-content-heading {
     text-align: center;
 }
 
-div.hero-content-heading h3 {
+.hero-content-heading h3 {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -86,7 +86,7 @@ div.hero-content-heading h3 {
     color: #bcc3c7;
 }
 
-div.hero-content-heading p {
+.hero-content-heading p {
     text-align: center;
     padding-top: 0.7rem;
     color: #88949B;
@@ -95,22 +95,13 @@ div.hero-content-heading p {
     font-weight: 300;
 }
 
-div.hero-content-btn {
+.hero-content-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
 }
 
-/* div.hero-content-btn a {
-    background:var(--heroBtnBackground);
-    text-decoration: none;
-    color: var(--logoColor);
-    font-size: 0.9rem;
-    padding: 10px 30px;
-    border-radius: 3px;
-    letter-spacing: 2px;
-} */
 .hero-btn{
     background:var(--heroBtnBackground);
     border:none;
@@ -138,7 +129,7 @@ div.hero-content-btn {
     color:var(--heroBtnBackground);
 }
 /* ====================== */
-div.hero-background-container {
+.hero-background-container {
     background: var(--heroBackground);
     padding: 10rem;
     display: flex;
@@ -146,7 +137,7 @@ div.hero-background-container {
     align-items: center;
 }
 
-div.background {
+.background {
     background: #fff;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
     padding: 15px 10px;
@@ -160,7 +151,8 @@ div.background {
     -o-border-radius: var(--borderRadius);
 }
 
-div.background h4 {
+.hero-heading{
+    text-align: center;
     padding: 2rem;
     color: #555657;
     font-size: 1rem;
@@ -168,20 +160,19 @@ div.background h4 {
     text-transform: uppercase;
 }
 
-div.background p {
+.hero-background-text{
     color: #A6A5AA;
     padding-left: 2rem;
     font-size: 0.8rem;
     letter-spacing: 2px;
 }
 
-div.hero-background-pos {
-    position: absolute;
-    right: 0px;
-    left: 66%;
+.hero-background-pos {
+    position: relative;
+    right: -10px;
     background: #fff;
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
 }
@@ -300,7 +291,10 @@ div.box1 h5 {
 
 div.gallery-section {
     background: #fff;
-    padding: 4rem;
+    padding:  1rem 4rem;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
 }
 
 div.gallery-content {
@@ -325,83 +319,88 @@ div.gallery-img {
     width:100%;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    justify-items: center;
     column-gap: 10px;
    padding-top: 3rem;
 }
 
 
 div.img img {
-    width: 250px;
-    height: 180px;
+    width:100%;
 }
 /* styles for footer and contact form */
-div.footer {
+.footer-container {
     background: #304353;
     padding: 3rem;
+    border:1px solid green;
+    width:100%;
 }
+.footer-centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
 
-div.footer-content {
+}
+.footer-text-container {
     text-align: center;
 }
 
-div.footer-content h4 {
+.footer-heading{
     color: #bcc3c7;
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-div.footer-content p {
+.footer-text{
     color: #88949B;
     font-size: 1rem;
     letter-spacing: 2px;
     padding-top: 0.8rem;
 }
 
-div.footer-input {
+.footer-input-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 3rem;
-}
+    margin-top: 20px;
+    width:50%;
 
-input[type="text"] {
-    margin-right: 10px;
-    padding: 10px 20px;
-    width: 25%;
+}
+.contact-input{
+    width:50%;
+    height:45px;
     outline: none;
     border: 1px solid #bcc3c7;
     background: transparent;
     color: #f0f0f0;
     font-size: 1rem;
+    margin:10px 10px;
+    text-indent: 10px;
     border-radius: 2px;
-}
-
-input[type="email"] {
-    margin-right: 10px;
-    padding: 10px 20px;
-    width: 25%;
-    outline: none;
-    border: 1px solid #bcc3c7;
-    background: transparent;
-    color: #f0f0f0;
-    font-size: 1rem;
-    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 ::placeholder {
     color: #A6A5AA;
 }
 
-div.footer-textarea {
-    display: flex;
+.footer-textarea {
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 2rem; */
 }
-
+.footer-textarea-container{
+    width:50%;
+}
 textarea {
-    width: 51%;
+    width:  100%;
     height: 150px;
     padding: 0.5rem;
     outline: none;
@@ -410,7 +409,7 @@ textarea {
     color: #f0f0f0;
 }
 
-div.footer-btn {
+.footer-btn-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -443,7 +442,7 @@ div.footer-btn {
 .send-message-btn:hover a{
     color:var(--heroBtnBackground);
 }
-div.footer h6 {
+.footer h6 {
     text-align: center;
     color: #88949B;
     font-size: 1rem;

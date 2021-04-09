@@ -19,11 +19,14 @@
     --mainBoxshadow:0 0 20px 0 rgba(46,61,73,.15);
     --heroBtnBackground:#E44C65;
     --heroBackground:#f0f0f0;
+    --silver:#A6A5AA;
 }
 html{
     scroll-behavior: smooth;
+    scroll-margin-top: 10em;
 }
 body{
-    background-color: var(--background);
+    /* background-color: var(--background); */
+    background-color: none;
 }
 /* ================= */

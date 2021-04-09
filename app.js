@@ -51,3 +51,9 @@ const navSlide = ()=>{
   toggleNavFromLink(navLinks);
 }
 navSlide();
+
+const dateHolder = document.querySelector(".date");
+let curDate = new Date();
+let currentYear = curDate.getFullYear();
+// using the date object we create dynamically set the copyright year for the page using the current year so the year is always current
+dateHolder.innerHTML = currentYear;
