@@ -135,13 +135,13 @@
     opacity: 0;
   }
   .nav-active{
-    transform:translateX(-13%);
+    transform:translateX(-12.5%);
     width:80%;
     background:var(--linkBackground);
-    -webkit-transform:translateX(-13%);
-    -moz-transform:translateX(-13%);
-    -ms-transform:translateX(-13%);
-    -o-transform:translateX(-13%);
+    -webkit-transform:translateX(-12.5%);
+    -moz-transform:translateX(-12.5%);
+    -ms-transform:translateX(-12.5%);
+    -o-transform:translateX(-12.5%);
 }
   @keyframes navLinkFade{
     from{

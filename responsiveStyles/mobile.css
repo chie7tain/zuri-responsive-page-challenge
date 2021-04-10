@@ -135,13 +135,13 @@
     opacity: 0;
   }
   .nav-active{
-    transform:translateX(20%);
+    transform:translateX(23%);
     width:80%;
     background:var(--linkBackground);
-    -webkit-transform:translateX(22%);
-    -moz-transform:translateX(20%);
-    -ms-transform:translateX(20%);
-    -o-transform:translateX(20%);
+    -webkit-transform:translateX(23%);
+    -moz-transform:translateX(23%);
+    -ms-transform:translateX(23%);
+    -o-transform:translateX(23%);
 }
   @keyframes navLinkFade{
     from{
@@ -566,6 +566,15 @@ textarea {
     padding-top: 6rem;
 }
 
-
-
+}
+@media screen and (width:375px){
+        .nav-active{
+        transform:translateX(27.5%);
+        width:80%;
+        background:var(--linkBackground);
+        -webkit-transform:translateX(27.5%);
+        -moz-transform:translateX(27.5%);
+        -ms-transform:translateX(27.5%);
+        -o-transform:translateX(27.5%);
+    }
 }
