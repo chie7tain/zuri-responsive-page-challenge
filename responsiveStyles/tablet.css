@@ -12,8 +12,8 @@
   }
   /* styles for main container */
   .main-container{
-      width:100%;
-      /* position: relative; */
+      /* width:100%; */
+      position: relative;
   }
   /* end of main container */
   /* styles for nav bar */
@@ -21,8 +21,8 @@
     display: flex;
     justify-content: space-between;
     height:60px;
-    align-items: center;
-    padding: 1rem 6rem;
+    /* align-items: center; */
+    padding: 1rem 0 2rem 2rem;
     width: 100%;
     background: var(--background);
     margin-top: 1px;
@@ -31,7 +31,6 @@
     -moz-transition: var(--mainTransition);
     -ms-transition: var(--mainTransition);
     -o-transition: var(--mainTransition);
-    /* position: relative; */
 }
 .fixed-nav .nav-bar{
     position: fixed;
@@ -81,7 +80,7 @@
   .burger{
     width:40px;
     height:40px;
-    margin:10px;
+    margin:0 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,10 +104,13 @@
     -ms-border-radius: var(--borderRadius);
     -o-border-radius: var(--borderRadius);
 }
+.line2{
+    width:10px;
+}
   .nav-links-container{
-    position:relative;
+    position: absolute;
     right:0px;
-    bottom:-255px;
+    top:70px;
     height: 80vh;
     display:flex;
     flex-direction:column;
@@ -130,18 +132,20 @@
     -moz-border-radius: var(--borderRadius);
     -ms-border-radius: var(--borderRadius);
     -o-border-radius: var(--borderRadius);
+    /* display: none; */
 }
   .nav-links-container .nav-link{
     opacity: 0;
   }
   .nav-active{
-    transform:translateX(0%);
-    width:80%;
-    background:var(--linkBackground);
+      width:50%;
+      background:var(--linkBackground);
+      transform:translateX(0%);
     -webkit-transform:translateX(0%);
     -moz-transform:translateX(0%);
     -ms-transform:translateX(0%);
     -o-transform:translateX(0%);
+    /* display: flex; */
 }
   @keyframes navLinkFade{
     from{
@@ -162,7 +166,11 @@
   }
   .toggle .line3{
     transform:rotate(45deg) translate(-5px,-6px);
-  }
+    -webkit-transform:rotate(45deg) translate(-5px,-6px);
+    -moz-transform:rotate(45deg) translate(-5px,-6px);
+    -ms-transform:rotate(45deg) translate(-5px,-6px);
+    -o-transform:rotate(45deg) translate(-5px,-6px);
+}
 
   /* end of responsive nav bar styles */
   /* styles for hero section */

@@ -107,14 +107,15 @@
     -ms-border-radius: var(--borderRadius);
     -o-border-radius: var(--borderRadius);
 }
+.line2{
+    width:10px;
+}
   .nav-links-container{
-      flex:3;
-    width:100%;
-    position:relative;
+    flex:3;
+    width:80%;
+    position:absolute;
     right:0px;
-    left:0px;
-    margin:0 auto;
-    bottom:-60px;
+    top:60px;
     height: 80vh;
     display:flex;
     flex-direction:column;
@@ -142,7 +143,7 @@
   }
   .nav-active{
       background:var(--linkBackground);
-      width:100%;
+      width:70%;
       transform:translateX(0%);
       -webkit-transform:translateX(0%);
       -moz-transform:translateX(0%);
